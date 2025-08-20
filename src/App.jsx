@@ -7,8 +7,10 @@ function App() {
 
   return (
     <>
-      <Greet/>
-      <Welcome/>
+      <Greet name="Yusufia" cityName="Bichi"/>
+      <Greet name="Isah" cityName="Bagwai"/>
+      <Welcome name="Yusufia" cityName="Bichi"/>
+      <Welcome name="Isah" cityName="Bagwai"/>
     </>
   )
 }
