@@ -1,26 +1,21 @@
-import React, { Component } from 'react'
-
-class Count extends Component {
-    constructor() {
-        super()
-        this.state = {
-            count: 0
-        }
-    }
+import { useState } from 'react'
 
 
-    changeCount(){
-        this.setState({
-            count: 0 + 1
-        })
+const Count = () => {
+    const [count, setCount] = useState(0);
+    const addCount = () => {
+        setCount(count+1);
     }
-    render() {
-        return (
-            <div>
-                <h1>Count is: {this.state.count}</h1>
-                <button onClick={()=>this.changeCount()}>Subscribe</button>
-            </div>
-        )
+    const subCount = () => {
+        setCount(count-1);
     }
+    return (
+        <div>
+            <h1>Count is: {count}</h1>
+            <button onClick={subCount}>Click to Sub 1</button>
+            <button onClick={()=> addCount()}>Click to Add 1</button>
+        </div>
+    );
 }
+
 export default Count

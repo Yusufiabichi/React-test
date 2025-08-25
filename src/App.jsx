@@ -3,6 +3,7 @@ import Welcome from '../components/Welcome'
 import Message from '../components/Message'
 import './App.css'
 import Count from '../components/Count'
+import List from '../components/List'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -16,7 +17,8 @@ function App() {
         <p>This is a children props</p>
       </Welcome> */}
       {/* <Message/> */}
-      < Count />
+      {/* < Count /> */}
+      < List />
     </>
   )
 }
