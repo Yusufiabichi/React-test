@@ -9,10 +9,14 @@ const Count = () => {
     const subCount = () => {
         setCount(count-1);
     }
+    const resetCount = () => {
+        setCount(0);
+    }
     return (
         <div>
             <h1>Count is: {count}</h1>
             <button onClick={subCount}>Click to Sub 1</button>
+            <button onClick={()=> resetCount()}>Reset</button>
             <button onClick={()=> addCount()}>Click to Add 1</button>
         </div>
     );
