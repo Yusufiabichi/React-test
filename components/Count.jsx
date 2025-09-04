@@ -6,18 +6,27 @@ const Count = () => {
     const addCount = () => {
         setCount(count+1);
     }
+
+    const checkCount = () => {
+        if(count=== 0){
+            alert("Cannot subtract from 0");
+        }
+        else if(count >=1){
+            setCount(count-1);
+        }
+    }
     const subCount = () => {
-        setCount(count-1);
+        checkCount()
     }
     const resetCount = () => {
         setCount(0);
     }
     return (
-        <div>
+        <div className='count-box'>
             <h1>Count is: {count}</h1>
-            <button onClick={subCount}>Click to Sub 1</button>
+            <button onClick={subCount}>Decrease</button>
             <button onClick={()=> resetCount()}>Reset</button>
-            <button onClick={()=> addCount()}>Click to Add 1</button>
+            <button onClick={()=> addCount()}>Increase</button>
         </div>
     );
 }

@@ -1,0 +1,16 @@
+{
+    "blogs": [
+        {
+            "title": "My first blog",
+            "body": "Why do we use it in a long establish fact that a reader will be distracted",
+            "author": "Yusufia",
+            "id": 1
+        },
+        {
+            "title": "My second blog",
+            "body": "Why do we use it in a long waited fact that a reader will be distracted",
+            "author": "Isah",
+            "id": 2
+        }
+    ]
+}
