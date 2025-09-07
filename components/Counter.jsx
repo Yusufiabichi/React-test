@@ -1,29 +1,29 @@
 import { useState } from 'react'
 
 
-const Count = () => {
-    const [count, setCount] = useState(0);
+const Counter = () => {
+    const [counter, setCounter] = useState(0);
     const addCount = () => {
-        setCount(count+1);
+        setCounter(count+1);
     }
 
     const checkCount = () => {
-        if(count=== 0){
-            alert("Cannot subtract from 0");
+        if(counter=== 0){
+            alert("You've reached the limit");
         }
-        else if(count >=1){
-            setCount(count-1);
+        else if(counter >=1){
+            setCount(counter-1);
         }
     }
     const subCount = () => {
         checkCount()
     }
     const resetCount = () => {
-        setCount(0);
+        setCounter(0);
     }
     return (
         <div className='count-box'>
-            <h1>Count is: {count}</h1>
+            <h1>Count is: {counter}</h1>
             <button onClick={subCount}>Decrease</button>
             <button onClick={()=> resetCount()}>Reset</button>
             <button onClick={()=> addCount()}>Increase</button>
@@ -31,4 +31,4 @@ const Count = () => {
     );
 }
 
-export default Count
+export default Counter
